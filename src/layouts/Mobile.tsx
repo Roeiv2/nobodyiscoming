@@ -226,6 +226,17 @@ export default function Mobile() {
 
   return (
     <main style={styles.container}>
+      {/* BACKGROUND VIDEO (MOBILE) */}
+      <video
+        src="/background.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        style={styles.backgroundVideo}
+      />
+
       <a
         href="https://phantom.com/tokens/solana/FjpnMgwhXjt6rGA295TQo61PZ2hwrymYQhoWt1Zjpump"
         target="_blank"
@@ -308,6 +319,18 @@ const styles: Record<string, CSSProperties> = {
     alignItems: "center",
     gap: "10px",
     overflow: "hidden",
+  },
+  backgroundVideo: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    objectFit: "cover",
+    objectPosition: "center",
+    zIndex: -1,
+    opacity: 0.08,
+    filter: "invert(1)",
   },
   phantomLink: {
     position: "fixed",
@@ -395,9 +418,11 @@ const styles: Record<string, CSSProperties> = {
     background: "transparent",
     border: "1px solid rgba(255,255,255,0.3)",
     color: "#fff",
-    padding: "10px 16px",
-    letterSpacing: "2px",
-    fontSize: "12px",
+    padding: "8px 14px",
+    letterSpacing: "1.5px",
+    fontSize: "10px",
     marginTop: "4px",
+    maxWidth: "90%",
+    wordBreak: "break-all",
   },
 }
