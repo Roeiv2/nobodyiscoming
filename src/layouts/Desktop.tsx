@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import type { CSSProperties } from "react"
 
-const CONTRACT_ADDRESS = "Placeholder Contract Address"
+const CONTRACT_ADDRESS = "FjpnMgwhXjt6rGA295TQo61PZ2hwrymYQhoWt1Zjpump"
 
 const HEARTBEAT_TARGET_VOLUME = 0.05
 const HEARTBEAT_FADE_IN = 20000
@@ -221,7 +221,7 @@ export default function App() {
     <main style={styles.container}>
       {/* PHANTOM LOGO */}
       <a
-        href="https://phantom.com/"
+        href="https://phantom.com/tokens/solana/FjpnMgwhXjt6rGA295TQo61PZ2hwrymYQhoWt1Zjpump"
         target="_blank"
         rel="noopener noreferrer"
         style={styles.phantomLink}
